@@ -5,7 +5,7 @@ from gensim.models import KeyedVectors
 from sklearn.metrics import pairwise
 
 forms, lemmas = [], []
-for f in glob.glob('data/shakespeares-works_TEIsimple_FolgerShakespeare.txt/*txt'):
+for f in glob.glob('data/shakespeare_txt/*txt'):
     with open(f) as inp:
         for line in inp:
             form, lemma = line.rstrip('\n').split('\t')

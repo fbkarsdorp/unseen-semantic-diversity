@@ -4,7 +4,7 @@ import lxml.etree as etree
 
 if __name__ == '__main__':
     root = 'data/shakespeares-works_TEIsimple_FolgerShakespeare'
-    target = 'data/shakespeares-works_TEIsimple_FolgerShakespeare.txt'
+    target = 'data/shakespeare_txt'
     files = os.listdir(root)
 
     for f in files:
