@@ -115,8 +115,6 @@ if __name__ == '__main__':
             # iterate over p's
             for p in [0, 0.01, 0.05, 0.1, 0.15, 0.2, 0.35, 0.5, 0.75]:
                 for it in range(args.iter):
-                    fpath = paths[0]
-                    p = 0.2
                     sents = get_sents(fpath, p=p)
                     if ft_model is not None:
                         embeddings, n_items = get_type_embeddings(ft_model, sents)
